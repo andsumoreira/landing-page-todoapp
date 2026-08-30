@@ -67,6 +67,7 @@ a:hover {
 
 .container {
   max-width: 1160px;
+  margin: 0 auto;
   padding-left: clamp(20px, 5vw, 48px);
   padding-right: clamp(20px, 5vw, 48px);
 }
@@ -540,4 +541,10 @@ hero__meta {
 .copy {
   font-size: 14px;
   color: var(--texto-fraco);
+}
+
+@media (max-width: 640px) {
+.header__inner { justify-content: center; }
+.nav { justify-content: center; width: 100%; gap: 16px; }
+.footer__inner { justify-content: center; text-align: center; }
 }
